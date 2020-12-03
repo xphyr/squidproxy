@@ -34,6 +34,9 @@ spec:
       - key: "remote-worker"
         value: "true"
         Effect: "NoSchedule"
+      - key: "site-name"
+        value: "site1"
+        Effect: "NoSchedule"
       containers:
       - name: squidproxy
         image: quay.io/xphyr/squidproxy:v5
