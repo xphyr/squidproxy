@@ -1,0 +1,1 @@
+# Simple Squid proxy setup for OpenShift Deployment
