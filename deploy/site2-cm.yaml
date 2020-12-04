@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: site1-blockers
+  name: site2-blockers
 data:
   bad-sites.acl: |-
     .google.com
