@@ -4,6 +4,5 @@ metadata:
   name: site1-blockers
 data:
   bad-sites.acl: |-
-    .google.com
     .msn.com
     .app.facebook.com
