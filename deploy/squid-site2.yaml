@@ -39,12 +39,19 @@ spec:
         Effect: "NoSchedule"
       containers:
       - name: squidproxy
-        image: quay.io/xphyr/squidproxy:v5
+        image: quay.io/xphyr/squidproxy:v7
         imagePullPolicy: IfNotPresent
         env: 
         - name: SQUID_LOG_DIR
           value: "/var/log/squid"
         - name: SQUID_CACHE_DIR
           value: "/var/spool/squid"
+        #volumeMounts:
+        #- name: block-list-file
+        #  mountPath: /etc/squid/bad-sites.acl
+      #volumes:
+      #- name: block-list-file
+      #  configMap:
+      #    name: site2-blockers
       nodeSelector:
         node-role.kubernetes.io/worker-sdn: ""

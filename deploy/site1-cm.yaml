@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: site1-blockers
+  namespace: squid-app-site1
+data:
+  bad.sites.file: |-
+    .google.com
+    .msn.com
+    .app.facebook.com
