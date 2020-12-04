@@ -18,6 +18,7 @@ kind: Deployment
 metadata:
   labels:
     app: squid-site2
+    config-ver: 1
   name: squid-site2
 spec:
   selector:
