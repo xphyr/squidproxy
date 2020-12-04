@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: site2-blockers
+data:
+  bad-sites.acl: |-
+    .google.com
+    .msn.com
+    .app.facebook.com
