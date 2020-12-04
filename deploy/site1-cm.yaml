@@ -4,7 +4,7 @@ metadata:
   name: site1-blockers
   namespace: squid-app-site1
 data:
-  bad.sites.file: |-
+  bad-sites.acl: |-
     .google.com
     .msn.com
     .app.facebook.com

@@ -48,7 +48,7 @@ spec:
           value: "/var/spool/squid"
         volumeMounts:
         - name: block-list-file
-          mountPath: /etc/squid/bad-sites.acl
+          mountPath: /var/lib/squid
       volumes:
       - name: block-list-file
         configMap:
