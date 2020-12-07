@@ -47,12 +47,12 @@ spec:
           value: "/var/log/squid"
         - name: SQUID_CACHE_DIR
           value: "/var/spool/squid"
-        #volumeMounts:
-        #- name: block-list-file
-        #  mountPath: /etc/squid/bad-sites.acl
-      #volumes:
-      #- name: block-list-file
-      #  configMap:
-      #    name: site2-blockers
+        volumeMounts:
+        - name: block-list-file
+          mountPath: /etc/squid/bad-sites.acl
+      volumes:
+      - name: block-list-file
+        configMap:
+          name: site2-blockers
       nodeSelector:
         node-role.kubernetes.io/worker-sdn: ""
