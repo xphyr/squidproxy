@@ -40,7 +40,7 @@ spec:
         Effect: "NoSchedule"
       containers:
       - name: squidproxy
-        image: quay.io/xphyr/squidproxy:v7
+        image: quay.io/xphyr/squidproxy:v8
         imagePullPolicy: IfNotPresent
         env: 
         - name: SQUID_LOG_DIR
